@@ -48,6 +48,18 @@ def move():
     else:
         snake.pop(0)
 
+    # Mover comida aleatoriamente un paso
+    dx, dy = choice([(10, 0), (-10, 0), (0, 10), (0, -10)])
+
+    new_food = food.copy()
+    new_food.x += dx
+    new_food.y += dy
+
+    # Evitar que salga de la ventana
+    if inside(new_food):
+        food.x = new_food.x
+        food.y = new_food.y
+
     clear()
 
     for body in snake:
