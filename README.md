@@ -10,6 +10,7 @@ Se realizaron las siguientes mejoras al código inicial:
 - Se implementó movimiento aleatorio para la comida.
 - La comida se mueve un paso a la vez.
 - Se agregó validación para evitar que la comida salga de la ventana.
+- Se modificó que cada que se inicie una partida la comida y la serpiente tengan colores randoms sin que tengan ambos el mismo y sin incluir el rojo.
 
 # Controles disponibles
 
