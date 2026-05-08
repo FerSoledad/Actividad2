@@ -62,6 +62,9 @@ def move():
 
     clear()
 
+    colors = ['green', 'blue', 'purple', 'orange', 'cyan']
+    colorSnake = choice(colors)
+
     for body in snake:
         square(body.x, body.y, 9, 'black')
 
